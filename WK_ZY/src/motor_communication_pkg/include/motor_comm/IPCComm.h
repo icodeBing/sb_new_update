@@ -49,6 +49,9 @@ private:
     void print_recv_actual(const char *prefix, struct Motor_master *msg);
 
     void recv_actual(struct Motor_master *msg);
+    void check_startup_zero_offset(uint64_t reconnects,
+                                   bool has_server_diag,
+                                   const Ethercat_comm_diag &diag);
 
     double encos_pulse_to_effort(int32_t current_actual, int32_t encos_motor_idx);
 
@@ -69,6 +72,7 @@ private:
 private:
     std::atomic<bool> g_stop;
     int fd_;
+    bool startup_zero_offset_checked_ = false;
     // 线程配置
     pthread_t p1;           // 定义一个线程标识符p1,用于标识一个线程
     pthread_attr_t ap1;     // 定义一个线程属性对象ap1，用于设置线程的属性

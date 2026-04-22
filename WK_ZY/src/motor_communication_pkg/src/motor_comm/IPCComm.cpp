@@ -2,6 +2,7 @@
 
 #include <algorithm>
 #include <chrono>
+#include <cmath>
 #include <condition_variable>
 #include <cstdint>
 #include <cstdio>
@@ -26,6 +27,7 @@ constexpr int kFailureWarnThreshold = 5;
 constexpr int kStaleFeedbackWarnThreshold = 20;
 constexpr auto kSevereOverrunThreshold = Microseconds(2000);
 constexpr int kNullJointDataLogPeriod = 1000;
+constexpr double kStartupZeroOffsetWarnThreshold = 1e-3;
 constexpr const char *kDefaultLogDir = "./motor_comm_logs";
 constexpr const char *kSnapshotFileName = "comm_snapshot.csv";
 constexpr const char *kEventFileName = "comm_event.csv";
@@ -98,6 +100,7 @@ struct EventRecord
 {
     uint64_t realtime_ns = 0;
     char event_type[48]{};
+    char detail[1536]{};
     int32_t ret_code = 0;
     int32_t errno_code = 0;
     int32_t consecutive_failures = 0;
@@ -370,11 +373,13 @@ EventRecord make_event_record(const char *event_type,
                               int32_t stale_feedback_cycles,
                               uint64_t reconnects,
                               bool has_server_diag,
-                              const Ethercat_comm_diag &diag)
+                              const Ethercat_comm_diag &diag,
+                              const char *detail = nullptr)
 {
     EventRecord record;
     record.realtime_ns = realtime_ns();
     std::snprintf(record.event_type, sizeof(record.event_type), "%s", event_type);
+    std::snprintf(record.detail, sizeof(record.detail), "%s", detail != nullptr ? detail : "");
     record.ret_code = ret_code;
     record.errno_code = errno_code;
     record.consecutive_failures = consecutive_failures;
@@ -475,7 +480,7 @@ private:
         "master2_latency_avg_us,master2_latency_max_us\n";
 
     static constexpr const char *kEventHeader =
-        "wall_time,realtime_ns,event_type,ret_code,errno_code,consecutive_failures,"
+        "wall_time,realtime_ns,event_type,detail,ret_code,errno_code,consecutive_failures,"
         "active_cycle_us,stale_feedback_cycles,reconnects,diag_version,diag_update_seq,"
         "master0_wc_state,master0_lost_frame_delta,master0_slaves_responding,master0_latency_avg_us,"
         "master1_wc_state,master1_lost_frame_delta,master1_slaves_responding,master1_latency_avg_us,"
@@ -653,15 +658,16 @@ private:
         }
 
         char wall_time[64];
-        char line[1024];
+        char line[4096];
         format_wall_time(record.realtime_ns, wall_time, sizeof(wall_time));
         const int length = std::snprintf(
             line,
             sizeof(line),
-            "%s,%llu,%s,%d,%d,%d,%llu,%d,%llu,%u,%u,%s,%d,%d,%d,%s,%d,%d,%d,%s,%d,%d,%d\n",
+            "%s,%llu,%s,%s,%d,%d,%d,%llu,%d,%llu,%u,%u,%s,%d,%d,%d,%s,%d,%d,%d,%s,%d,%d,%d\n",
             wall_time,
             static_cast<unsigned long long>(record.realtime_ns),
             record.event_type,
+            record.detail,
             record.ret_code,
             record.errno_code,
             record.consecutive_failures,
@@ -1120,6 +1126,8 @@ void IPCComm::run()
                 trace->ipc_feedback_rx_ns = single_shot_probe::now_ns();
             }
 
+            check_startup_zero_offset(monitor.reconnects, true, host_recv_msg.ec_diag);
+
             const bool command_changed =
                 monitor.has_prev_cmd && command_packet_changed(host_send_msg, monitor.prev_cmd);
             const bool feedback_changed =
@@ -1519,6 +1527,64 @@ void IPCComm::recv_actual(struct Motor_master *msg)
         std::lock_guard<std::mutex> lock(ipc_joint_mutex2);
         global_Joint_data_pub = temp_global_Joint_data_pub;
     } // 花括号结束，lock_guard析构，自动解锁joint_mutex
+}
+
+void IPCComm::check_startup_zero_offset(uint64_t reconnects,
+                                        bool has_server_diag,
+                                        const Ethercat_comm_diag &diag)
+{
+    if (startup_zero_offset_checked_ || temp_global_Joint_data_pub == nullptr)
+    {
+        return;
+    }
+
+    std::string detail;
+    int abnormal_joint_count = 0;
+    for (int joint_idx = 0; joint_idx < motor_num; ++joint_idx)
+    {
+        const double position = temp_global_Joint_data_pub->position[joint_idx];
+        if (std::fabs(position) <= kStartupZeroOffsetWarnThreshold)
+        {
+            continue;
+        }
+
+        ++abnormal_joint_count;
+        char entry[160];
+        std::snprintf(entry,
+                      sizeof(entry),
+                      "%s=%.6f",
+                      joint_names[joint_idx].c_str(),
+                      position);
+        if (!detail.empty())
+        {
+            detail += "; ";
+        }
+        detail += entry;
+    }
+
+    startup_zero_offset_checked_ = true;
+    if (abnormal_joint_count == 0)
+    {
+        return;
+    }
+
+    std::fprintf(stderr,
+                 "[Client][Warn] 启动建链后检测到 %d/23 个关节实际位置偏离零位(阈值 %.6f): %s。当前零位存在偏移，请及时检修。\n",
+                 abnormal_joint_count,
+                 kStartupZeroOffsetWarnThreshold,
+                 detail.c_str());
+
+    comm_logger().enqueue_event(make_event_record(
+        "startup_zero_offset_detected",
+        abnormal_joint_count,
+        0,
+        0,
+        0,
+        0,
+        reconnects,
+        has_server_diag,
+        diag,
+        detail.c_str()));
 }
 
 void IPCComm::send_zero_command()
