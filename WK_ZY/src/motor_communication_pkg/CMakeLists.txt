@@ -21,6 +21,7 @@ set(SRC_LISTS
   src/main.cpp
   src/motor_comm/motorComm.cpp
   src/motor_comm/IPCComm.cpp
+  src/motor_comm/logRecord.cpp
   src/global/globalParams.cpp
 )
 
