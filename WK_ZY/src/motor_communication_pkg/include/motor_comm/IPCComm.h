@@ -61,8 +61,8 @@ private:
     double ti5_pulse_to_rad(int32_t position_actual);
     double ti5_pulse_to_angular_velocity(int32_t velocity_actual);
 
-        int32_t encos_kp_to_pulse(double kp);
-        int32_t encos_kd_to_pulse(double kd);
+    int32_t encos_kp_to_pulse(double kp);
+    int32_t encos_kd_to_pulse(double kd);
 
     int32_t encos_rad_to_degree(double rad);
     int32_t encos_angular_velocity_to_rad_per_min(double angular_velocity);
@@ -74,11 +74,10 @@ private:
     int fd_;
     bool startup_zero_offset_checked_ = false;
     // 线程配置
-    pthread_t p1;           // 定义一个线程标识符p1,用于标识一个线程
-    pthread_attr_t ap1;     // 定义一个线程属性对象ap1，用于设置线程的属性
-    struct sched_param sp1; // 定义一个调度参数结构体对象sp1，用于设置线程的cpu亲和性
-    cpu_set_t cp1;          // 定义一个cpu集合对象cpl，用于设置线程的cpu亲和性
-
+    pthread_t p1;                                                                  // 定义一个线程标识符p1,用于标识一个线程
+    pthread_attr_t ap1;                                                            // 定义一个线程属性对象ap1，用于设置线程的属性
+    struct sched_param sp1;                                                        // 定义一个调度参数结构体对象sp1，用于设置线程的cpu亲和性
+    cpu_set_t cp1;                                                                 // 定义一个cpu集合对象cpl，用于设置线程的cpu亲和性
     Motor_Ctrl_Mode_type m_Motor_Ctrl_Mode = Motor_Ctrl_Mode_type::Force_Pos_Mode; // 默认力位混控模式，如果需要调整电机控制模式，修改改变量即可
     std::mutex ipc_joint_mutex2;                                                   // 仅IPC通信线程使用，独立锁
 };
