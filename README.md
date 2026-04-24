@@ -20,6 +20,7 @@ git status  //查看当前状态
 git pull origin main //拉取并合并远程仓库的代码
 git stash //暂存当前未提交的代码
 git stash pop //恢复暂存的代码
+ git log --oneline -5 //查看最近5次提交记录
 ```
 
 推送流程

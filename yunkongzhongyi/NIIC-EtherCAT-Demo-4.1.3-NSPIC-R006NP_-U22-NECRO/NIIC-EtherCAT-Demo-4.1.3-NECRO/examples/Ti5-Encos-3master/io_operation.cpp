@@ -13,85 +13,6 @@ Motor_Ctrl_Mode_type m_Motor_Ctrl_Mode = Motor_Ctrl_Mode_type::Force_Pos_Mode; /
 
 void IoController::on_cycle_encos(int slave_pos)
 {
-    /**
-     * @brief 力位混合模式
-     *
-     * 使用问答模式
-     *
-     * @param tx_msg 存储构建CAN消息的指针。
-     * @param passage   电机通道编号，CAN1（1，2，3），CAN2（4，5，6）。
-     * @param motor_id  电机唯一标识符（ID）。
-     * @param kp        参数kp范围：0.0 ~ 500.0f。
-     * @param kd        参数kd范围：0.0 ~ 5.0f。
-     * @param pos       期望位置，范围：-12.5 ~ 12.5rad。
-     * @param spd       期望速度，范围：-18.0 ~ 18.0rad/s。
-     * @param tor       电机前馈扭矩，范围：-30 ~ 30Nm。
-     *
-     * @return None
-     */
-    // send_motor_ctrl_cmd(&Tx_Message, 1,1, 0, 0, 0, 0, 5, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message, 2,2, 0, 0, 0, 0, 5, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message, 3,3, 0, 0, 0, 0, 5, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message, 4,4, 0, 0, 0, 0, 3, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message, 5,5, 0, 0, 0, 0, 6, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message, 6,6, 0, 0, 0, 0, 9, slave_pos);
-    // send_motor_ctrl_cmd(&Tx_Message,pas ,id, kp, kd, pos, spd, torq, slave_pos);
-
-    /**
-     * @brief 伺服位置控制
-     *
-     * 使用问答模式
-     *
-     * @param tx_msg 存储构建CAN消息的指针。
-     * @param passage   电机通道编号，CAN1（1，2，3），CAN2（4，5，6）。
-     * @param motor_id  电机的唯一标识符（ID）。
-     * @param pos       期望位置，单位为度。
-     * @param spd       期望速度，范围 0 ~ 18000，对应 0 ~ 1800.0rpm，比例为10：1
-     * @param cur       电流阈值，范围 0 ~ 3000，对应 0 ~ 300.0A，比例为10：1
-     * @param ack_status 报文返回状态，0：不返回，1：返回报文类型1，2：返回报文类型2，3：返回报文类型3。详见技术文档-问答模式反馈报文章节。
-     */
-
-    // set_motor_position(tx_msg, passage,motor_id,  pos,  spd,  cur,  ack_status)
-    // set_motor_position(&Tx_Message,1,1,1000,50,5,slave_pos);
-    // set_motor_position(&Tx_Message,2,2,1000,50,5,slave_pos);
-    // set_motor_position(&Tx_Message,3,3,1000,50,5,slave_pos);
-    // set_motor_position(&Tx_Message,4,4,1000,50,5,slave_pos);
-    // set_motor_position(&Tx_Message,5,5,180,120,5,1);  // di 3 wei biao shi jue dui jiao du 给定期望位置大于±180 度，即可多圈转，但是重启上电会重置圈数。
-    // set_motor_position(&Tx_Message,6,6,1000,50,5,slave_pos);
-
-    /**
-     * @brief 伺服速度控制
-     *
-     * 使用问答模式
-     *
-     * @param tx_msg 存储构建CAN消息的指针。
-     * @param passage   电机的通道编号，CAN1（1，2，3），CAN2（4，5，6）。
-     * @param motor_id  电机的唯一标识符（ID）。
-     * @param spd       期望速度，范围 -18000 ~ 18000rpm。
-     * @param cur       电流阈值，范围 0 ~ 3000, 对应 0 ~ 300.0A，比例10：1。
-     * @param ack_status 报文返回状态，0：不返回，1~3：返回报文类型1~3。详见技术文档-问答模式反馈报文章节。
-     */
-
-    // void set_motor_speed(EtherCAT_Msg* tx_msg, uint8_t passage, uint16_t motor_id, float spd, uint16_t cur, uint8_t ack_status)
-
-    /**
-     * @brief 电流、力矩控制和刹车控制。
-     *
-     * 需要使用问答模式
-     *
-     * @param tx_msg 存储构建CAN消息的指针。
-     * @param passage   电机的通道编号，CAN1（1，2，3），CAN2（4，5，6）。
-     * @param motor_id  电机的唯一标识符（ID）。
-     * @param cur_tor   期望电流/力矩，范围 -3000 ~ 3000, 对应 -30.00A(Nm) ~ 30.00A(Nm)，比例100：1。
-     * @param ctrl_status 控制状态，0：电流控制，1：力矩控制，2：变量阻尼制动控制（也叫全制动），3：能耗制动控制，4：再生制动控制。
-     * @param ack_status 报文返回状态，0：不返回，1~3：返回报文类型1~3。详见技术文档-问答模式反馈报文章节。
-     */
-
-    // set_motor_cur_tor(tx_msg, pasage, motor_id, cur_tor, ctrl_status, ack_status)
-    // set_motor_cur_tor(&Tx_Message, 1, 1, 600, 1, 1);
-    // set_motor_cur_tor(&Tx_Message, 2, 2, 600, 1, 1);
-    // set_motor_cur_tor(&Tx_Message, 3, 3, 600, 1, 1);
-
     static bool reading_motor_id_falg = false; // true
     static bool setting_motor_id_falg = false; // false
 
@@ -397,7 +318,7 @@ void IoController::send_motor_ctrl_cmd(EtherCAT_Msg *TxMessage, uint8_t passage,
     if (motor_id == 1 || motor_id == 4)
     {
         tor_int = float_to_uint(tor, TMIN_10020, TMAX_10020, 12);
-        kd_int  = float_to_uint(kd, KD_MIN_10020, KD_MAX_10020, 9);
+        kd_int = float_to_uint(kd, KD_MIN_10020, KD_MAX_10020, 9);
     }
     else if (motor_id == 2)
     {
@@ -1775,7 +1696,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         actual_current_encos[1] = actual_current_encos[1] & 0X0FFF;
 
         encos_axis.encos_current_actual_value[0] = actual_current_encos[1];
-        //printf("actual_current_encos[1]:%d\n", actual_current_encos[1]);
+        // printf("actual_current_encos[1]:%d\n", actual_current_encos[1]);
     }
 
     // motor 2
@@ -1791,7 +1712,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         actual_current_encos[2] = actual_current_encos[2] & 0X0FFF;
 
         encos_axis.encos_current_actual_value[1] = actual_current_encos[2];
-        //printf("actual_current_encos[2]:%d\n", actual_current_encos[2]);
+        // printf("actual_current_encos[2]:%d\n", actual_current_encos[2]);
     }
 
     // motor 3
@@ -1806,7 +1727,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[3] = actual_current_encos[3] & 0X0FFF;
         encos_axis.encos_current_actual_value[2] = actual_current_encos[3];
-        //printf("actual_current_encos[3]:%d\n", actual_current_encos[3]);
+        // printf("actual_current_encos[3]:%d\n", actual_current_encos[3]);
     }
 
     // motor 4
@@ -1821,7 +1742,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[4] = actual_current_encos[4] & 0X0FFF;
         encos_axis.encos_current_actual_value[3] = actual_current_encos[4];
-        //printf("actual_current_encos[4]:%d\n", actual_current_encos[4]);
+        // printf("actual_current_encos[4]:%d\n", actual_current_encos[4]);
     }
 
     // motor  5
@@ -1836,7 +1757,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[5] = actual_current_encos[5] & 0X0FFF;
         encos_axis.encos_current_actual_value[4] = actual_current_encos[5];
-        //printf("actual_current_encos[5]:%d\n", actual_current_encos[5]);
+        // printf("actual_current_encos[5]:%d\n", actual_current_encos[5]);
     }
 
     // motor 6
@@ -1851,7 +1772,7 @@ void IoController::encons_get_actual_current_slave0(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[6] = actual_current_encos[6] & 0X0FFF;
         encos_axis.encos_current_actual_value[5] = actual_current_encos[6];
-        //printf("actual_current_encos[6]:%d\n", actual_current_encos[6]);
+        // printf("actual_current_encos[6]:%d\n", actual_current_encos[6]);
     }
 }
 void IoController::encons_get_actual_current_slave1(io_data *io)
@@ -1872,7 +1793,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[1] = actual_current_encos[1] & 0X0FFF;
         encos_axis.encos_current_actual_value[6] = actual_current_encos[1];
-        //printf("actual_current_encos[7]:%d\n", actual_current_encos[1]);
+        // printf("actual_current_encos[7]:%d\n", actual_current_encos[1]);
     }
 
     // motor 2
@@ -1887,7 +1808,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[2] = actual_current_encos[2] & 0X0FFF;
         encos_axis.encos_current_actual_value[7] = actual_current_encos[2];
-        //printf("actual_current_encos[8]:%d\n", actual_current_encos[2]);
+        // printf("actual_current_encos[8]:%d\n", actual_current_encos[2]);
     }
 
     // motor 3
@@ -1902,7 +1823,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[3] = actual_current_encos[3] & 0X0FFF;
         encos_axis.encos_current_actual_value[8] = actual_current_encos[3];
-        //printf("actual_current_encos[9]:%d\n", actual_current_encos[3]);
+        // printf("actual_current_encos[9]:%d\n", actual_current_encos[3]);
     }
 
     // motor 4
@@ -1917,7 +1838,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[4] = actual_current_encos[4] & 0X0FFF;
         encos_axis.encos_current_actual_value[9] = actual_current_encos[4];
-        //printf("actual_current_encos[10]:%d\n", actual_current_encos[4]);
+        // printf("actual_current_encos[10]:%d\n", actual_current_encos[4]);
     }
 
     // motor  5
@@ -1932,7 +1853,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[5] = actual_current_encos[5] & 0X0FFF;
         encos_axis.encos_current_actual_value[10] = actual_current_encos[5];
-        //printf("actual_current_encos[11]:%d\n", actual_current_encos[5]);
+        // printf("actual_current_encos[11]:%d\n", actual_current_encos[5]);
     }
 
     // motor 6
@@ -1947,7 +1868,7 @@ void IoController::encons_get_actual_current_slave1(io_data *io)
         // PPPP XXXX XXXX XXXX
         actual_current_encos[6] = actual_current_encos[6] & 0X0FFF;
         encos_axis.encos_current_actual_value[11] = actual_current_encos[6];
-        //printf("actual_current_encos[12]:%d\n", actual_current_encos[6]);
+        // printf("actual_current_encos[12]:%d\n", actual_current_encos[6]);
     }
 }
 /*************************************encons_get_actual_current************************************************ */

@@ -13,21 +13,21 @@
 
 namespace
 {
-using SteadyClock = std::chrono::steady_clock;
-using Microseconds = std::chrono::microseconds;
+    using SteadyClock = std::chrono::steady_clock;
+    using Microseconds = std::chrono::microseconds;
 
-constexpr auto kCycleBudget = Microseconds(1000);
-constexpr auto kReportPeriod = std::chrono::seconds(1);
-constexpr int kFailureWarnThreshold = 5;
-constexpr int kStaleFeedbackWarnThreshold = 20;
-constexpr auto kSevereOverrunThreshold = Microseconds(2000);
-constexpr int kNullJointDataLogPeriod = 1000;
-constexpr double kStartupZeroOffsetWarnThreshold = 1e-3;
+    constexpr auto kCycleBudget = Microseconds(1000);
+    constexpr auto kReportPeriod = std::chrono::seconds(1);
+    constexpr int kFailureWarnThreshold = 5;
+    constexpr int kStaleFeedbackWarnThreshold = 20;
+    constexpr auto kSevereOverrunThreshold = Microseconds(2000);
+    constexpr int kNullJointDataLogPeriod = 1000;
+    constexpr double kStartupZeroOffsetWarnThreshold = 1e-1;
 } // namespace
 
-using motor_comm_log::CommMonitor;
-using motor_comm_log::command_packet_changed;
 using motor_comm_log::comm_logger;
+using motor_comm_log::command_packet_changed;
+using motor_comm_log::CommMonitor;
 using motor_comm_log::feedback_packet_changed;
 using motor_comm_log::make_event_record;
 using motor_comm_log::make_snapshot_record;
