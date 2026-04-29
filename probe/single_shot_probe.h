@@ -11,12 +11,16 @@
 #include <cstdint>
 #include <cstdio>
 #include <cstring>
+#include <cmath>
+#include <limits>
 
 namespace single_shot_probe
 {
 constexpr const char *kSharedMemoryName = "/sb_single_shot_probe_v1";
 constexpr std::uint32_t kMagic = 0x53425031U;
-constexpr std::uint32_t kVersion = 1U;
+constexpr std::uint32_t kVersion = 2U;
+constexpr std::int32_t kTraceModeActivePublish = 0;
+constexpr std::int32_t kTraceModePassiveObserve = 1;
 
 struct TraceData
 {
@@ -27,7 +31,7 @@ struct TraceData
     std::int32_t target_ros_joint_index;
     std::int32_t target_master_index;
     std::int32_t target_motor_index;
-    std::int32_t reserved;
+    std::int32_t trace_mode;
     double command_position_rad;
     std::uint64_t topic_pub_ns;
     std::uint64_t motor_node_rx_ns;
@@ -112,12 +116,41 @@ inline void arm_trace(
     trace->target_ros_joint_index = target_ros_joint_index;
     trace->target_master_index = target_master_index;
     trace->target_motor_index = target_motor_index;
+    trace->trace_mode = kTraceModeActivePublish;
     trace->command_position_rad = command_position_rad;
+}
+
+inline void arm_passive_trace(
+    TraceData *trace,
+    int target_ros_joint_index,
+    int target_master_index,
+    int target_motor_index)
+{
+    arm_trace(trace,
+              target_ros_joint_index,
+              target_master_index,
+              target_motor_index,
+              std::numeric_limits<double>::quiet_NaN());
+    if (trace != nullptr)
+    {
+        trace->trace_mode = kTraceModePassiveObserve;
+    }
 }
 
 inline bool ready(const TraceData *trace)
 {
     return trace != nullptr && trace->armed != 0U;
+}
+
+inline bool command_position_is_any(const TraceData *trace)
+{
+    return trace != nullptr && std::isnan(trace->command_position_rad);
+}
+
+inline bool matches_command_position(const TraceData *trace, double position)
+{
+    return command_position_is_any(trace) ||
+           std::fabs(position - trace->command_position_rad) < 1e-9;
 }
 
 inline double delta_us(std::uint64_t start_ns, std::uint64_t end_ns)
@@ -152,6 +185,11 @@ inline void print_summary_if_ready(TraceData *trace)
                 static_cast<unsigned long long>(trace->ipc_feedback_rx_ns),
                 static_cast<unsigned long long>(trace->state_pub_ns),
                 static_cast<unsigned long long>(trace->state_seen_ns));
+    if (trace->trace_mode == kTraceModePassiveObserve)
+    {
+        std::printf("[Probe][Summary] passive mode: topic_pub_ns is motor_node command_rx; "
+                    "upper publish time needs /joint_command header.stamp or publisher instrumentation.\n");
+    }
     std::printf("[Probe][Summary] /joint_command发布 -> motor_node订阅 = %.3f us\n",
                 delta_us(trace->topic_pub_ns, trace->motor_node_rx_ns));
     std::printf("[Probe][Summary] motor_node订阅 -> EtherCAT send_callback = %.3f us\n",

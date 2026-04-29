@@ -1,6 +1,7 @@
 #include "motor_comm/motorComm.h"
 
 #include <cmath>
+#include <cstdint>
 
 #include "probe/single_shot_probe.h"
 
@@ -85,9 +86,19 @@ void MotorComm::joint_motor_comm_callback(const JointMotor::SharedPtr msg){
     {
         const int joint_index = trace->target_ros_joint_index;
         if (joint_index >= 0 && joint_index < motor_num &&
-            std::fabs(msg->position[joint_index] - trace->command_position_rad) < 1e-9)
+            single_shot_probe::matches_command_position(trace, msg->position[joint_index]))
         {
-            trace->motor_node_rx_ns = single_shot_probe::now_ns();
+            const std::uint64_t rx_ns = single_shot_probe::now_ns();
+            if (single_shot_probe::command_position_is_any(trace))
+            {
+                trace->command_position_rad = msg->position[joint_index];
+            }
+            if (trace->trace_mode == single_shot_probe::kTraceModePassiveObserve &&
+                trace->topic_pub_ns == 0U)
+            {
+                trace->topic_pub_ns = rx_ns;
+            }
+            trace->motor_node_rx_ns = rx_ns;
             RCLCPP_INFO(this->get_logger(),
                         "[Probe][MotorComm] 收到 /joint_command，motor_node_rx_ns=%llu joint=%d pos=%.6f",
                         static_cast<unsigned long long>(trace->motor_node_rx_ns),

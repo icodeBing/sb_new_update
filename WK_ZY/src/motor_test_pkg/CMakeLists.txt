@@ -18,13 +18,23 @@ add_executable(motor_test_node
   src/main.cpp
 )
 
+add_executable(motor_latency_monitor_node
+  src/passive_latency_monitor.cpp
+)
+
 ament_target_dependencies(motor_test_node
+  rclcpp
+  motor_interface
+)
+
+ament_target_dependencies(motor_latency_monitor_node
   rclcpp
   motor_interface
 )
 
 install(TARGETS
   motor_test_node
+  motor_latency_monitor_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
