@@ -1,0 +1,25 @@
+[0.015s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg -- -j9 -l9
+[0.092s] [ 16%] [32mBuilding CXX object CMakeFiles/motor_node.dir/src/motor_comm/motorComm.cpp.o[0m
+[12.881s] [ 33%] [32m[1mLinking CXX executable motor_node[0m
+[13.501s] [100%] Built target motor_node
+[13.516s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg' returned '0': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg -- -j9 -l9
+[13.519s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg
+[13.529s] -- Install configuration: ""
+[13.529s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node
+[13.538s] -- Set runtime path of "/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node" to ""
+[13.538s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/package_run_dependencies/motor_communication_pkg
+[13.538s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/parent_prefix_path/motor_communication_pkg
+[13.538s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.sh
+[13.538s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.dsv
+[13.538s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.sh
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.dsv
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.bash
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.sh
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.zsh
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.dsv
+[13.539s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.dsv
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/packages/motor_communication_pkg
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig.cmake
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig-version.cmake
+[13.539s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.xml
+[13.542s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg' returned '0': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg

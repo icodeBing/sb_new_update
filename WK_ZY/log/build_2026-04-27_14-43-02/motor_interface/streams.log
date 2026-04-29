@@ -1,0 +1,165 @@
+[0.018s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface -- -j9 -l9
+[0.084s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_generator_c[0m
+[0.096s] [  3%] Built target motor_interface__rs
+[0.096s] [  6%] Built target motor_interface__cpp
+[0.103s] [ 15%] Built target motor_interface__rosidl_generator_c
+[0.110s] [ 15%] Built target ament_cmake_python_copy_motor_interface
+[0.111s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_introspection_cpp[0m
+[0.111s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_fastrtps_cpp[0m
+[0.114s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_cpp[0m
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_introspection_c[0m
+[0.124s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_c[0m
+[0.124s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_fastrtps_c[0m
+[0.133s] [ 25%] Built target motor_interface__rosidl_typesupport_introspection_cpp
+[0.137s] [ 43%] Built target motor_interface__rosidl_typesupport_cpp
+[0.138s] [ 43%] Built target motor_interface__rosidl_typesupport_introspection_c
+[0.141s] [ 53%] Built target motor_interface__rosidl_typesupport_c
+[0.144s] [ 71%] Built target motor_interface__rosidl_typesupport_fastrtps_c
+[0.144s] [ 71%] Built target motor_interface__rosidl_typesupport_fastrtps_cpp
+[0.172s] [ 71%] Built target motor_interface
+[0.201s] [ 75%] Built target motor_interface__py
+[0.216s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_generator_py[0m
+[0.238s] [ 81%] Built target motor_interface__rosidl_generator_py
+[0.254s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.254s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_introspection_c__pyext[0m
+[0.254s] [35m[1mConsolidate compiler generated dependencies of target motor_interface__rosidl_typesupport_c__pyext[0m
+[0.273s] [ 96%] Built target motor_interface__rosidl_typesupport_introspection_c__pyext
+[0.273s] [100%] Built target motor_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.273s] [100%] Built target motor_interface__rosidl_typesupport_c__pyext
+[0.465s] running egg_info
+[0.466s] writing motor_interface.egg-info/PKG-INFO
+[0.467s] writing dependency_links to motor_interface.egg-info/dependency_links.txt
+[0.467s] writing top-level names to motor_interface.egg-info/top_level.txt
+[0.471s] reading manifest file 'motor_interface.egg-info/SOURCES.txt'
+[0.472s] writing manifest file 'motor_interface.egg-info/SOURCES.txt'
+[0.518s] [100%] Built target ament_cmake_python_build_motor_interface_egg
+[0.534s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface -- -j9 -l9
+[0.547s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface
+[0.558s] -- Install configuration: ""
+[0.558s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/rosidl_interfaces/motor_interface
+[0.558s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.558s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.558s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_generator_c__visibility_control.h
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.h
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__struct.h
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__functions.c
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__functions.h
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/joint_motor.h
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/library_path.sh
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/library_path.dsv
+[0.559s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_generator_c.so
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_fastrtps_c.h
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_c.so
+[0.560s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/joint_motor.hpp
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__struct.hpp
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__traits.hpp
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.hpp
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__builder.hpp
+[0.561s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_fastrtps_cpp.hpp
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/dds_fastrtps
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_cpp.so
+[0.562s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_introspection_c.h
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.c
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_c.so
+[0.563s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_c.so
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_introspection_cpp.hpp
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.cpp
+[0.564s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_cpp.so
+[0.565s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_cpp.so
+[0.565s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/pythonpath.sh
+[0.565s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/pythonpath.dsv
+[0.565s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info
+[0.565s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[0.565s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/top_level.txt
+[0.566s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.566s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.566s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface
+[0.566s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.566s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/__init__.py
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/_joint_motor.py
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/_joint_motor_s.c
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/__init__.py
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/libmotor_interface__rosidl_generator_py.so
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_introspection_c.c
+[0.567s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_c.c
+[0.568s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.608s] Listing '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface'...
+[0.608s] Listing '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg'...
+[0.616s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[0.616s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[0.617s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[0.617s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_generator_py.so
+[0.618s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/rust_packages/motor_interface
+[0.618s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust
+[0.618s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src
+[0.618s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg.rs
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg/rmw.rs
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/lib.rs
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/build.rs
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/Cargo.toml
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/msg/JointMotor.idl
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/msg/JointMotor.msg
+[0.619s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/package_run_dependencies/motor_interface
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/parent_prefix_path/motor_interface
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/ament_prefix_path.sh
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/ament_prefix_path.dsv
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/path.sh
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/path.dsv
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.bash
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.sh
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.zsh
+[0.620s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.dsv
+[0.620s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.dsv
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/packages/motor_interface
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cExport.cmake
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cExport-noconfig.cmake
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cppExport.cmake
+[0.621s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.622s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.622s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cExport.cmake
+[0.622s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.623s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cExport.cmake
+[0.623s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cExport-noconfig.cmake
+[0.623s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cppExport.cmake
+[0.623s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cppExport.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_pyExport.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_pyExport-noconfig.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake-extras.cmake
+[0.624s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_targets-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interfaceConfig.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interfaceConfig-version.cmake
+[0.625s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.xml
+[0.629s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface

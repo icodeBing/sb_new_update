@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "motor_interface__py",
+		"source" : "/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface/motor_interface__py"
+	}
+}

@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from motor_interface/msg/JointMotor.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module motor_interface {
+  module msg {
+    typedef string string__23[23];
+    typedef double double__23[23];
+    struct JointMotor {
+      std_msgs::msg::Header header;
+
+      string__23 joint_names;
+
+      double__23 kp;
+
+      double__23 kd;
+
+      double__23 position;
+
+      double__23 velocity;
+
+      double__23 effort;
+    };
+  };
+};

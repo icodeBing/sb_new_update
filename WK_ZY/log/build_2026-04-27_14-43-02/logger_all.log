@@ -1,0 +1,276 @@
+[0.372s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.372s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=9, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb9edcee0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb9edc9d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb9edc9d0>>)
+[0.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.728s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.728s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/niic/427/427/sb_new_tor/WK_ZY'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.748s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extension 'ignore'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extension 'ignore_ament_install'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extensions ['colcon_pkg']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extension 'colcon_pkg'
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extensions ['colcon_meta']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extension 'colcon_meta'
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extensions ['ros']
+[0.752s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_communication_pkg) by extension 'ros'
+[0.756s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_communication_pkg' with type 'ros.ament_cmake' and name 'motor_communication_pkg'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extensions ['ros']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_interface) by extension 'ros'
+[0.758s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_interface' with type 'ros.ament_cmake' and name 'motor_interface'
+[0.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extension 'ignore'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extension 'ignore_ament_install'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extensions ['colcon_pkg']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extension 'colcon_pkg'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extensions ['colcon_meta']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extension 'colcon_meta'
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extensions ['ros']
+[0.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_test_pkg) by extension 'ros'
+[0.760s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_test_pkg' with type 'ros.ament_cmake' and name 'motor_test_pkg'
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.808s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/humble
+[0.831s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_args' from command line to 'None'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_target' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.889s] DEBUG:colcon.colcon_core.verb:Building package 'motor_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface', 'merge_install': False, 'path': '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_interface', 'symlink_install': False, 'test_result_base': None}
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_args' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_target' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_communication_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.890s] DEBUG:colcon.colcon_core.verb:Building package 'motor_communication_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg', 'merge_install': False, 'path': '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_target' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'motor_test_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'motor_test_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg', 'merge_install': False, 'path': '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_test_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.891s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.892s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.893s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_interface' with build type 'ament_cmake'
+[0.893s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_interface'
+[0.900s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.901s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.901s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.911s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface -- -j9 -l9
+[1.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface -- -j9 -l9
+[1.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface
+[1.521s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_interface)
+[1.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface
+[1.531s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface' for CMake module files
+[1.532s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface' for CMake config files
+[1.533s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_interface', 'cmake_prefix_path')
+[1.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.ps1'
+[1.535s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.sh'
+[1.537s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib'
+[1.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_interface', 'ld_library_path_lib')
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.ps1'
+[1.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.dsv'
+[1.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.sh'
+[1.539s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/bin'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/pkgconfig/motor_interface.pc'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/python3.10/site-packages'
+[1.540s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/bin'
+[1.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.ps1'
+[1.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.dsv'
+[1.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.sh'
+[1.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.bash'
+[1.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.zsh'
+[1.548s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/colcon-core/packages/motor_interface)
+[1.549s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_interface)
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface' for CMake module files
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface' for CMake config files
+[1.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_interface', 'cmake_prefix_path')
+[1.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.ps1'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.dsv'
+[1.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/cmake_prefix_path.sh'
+[1.553s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib'
+[1.553s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_interface', 'ld_library_path_lib')
+[1.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.ps1'
+[1.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.dsv'
+[1.554s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/hook/ld_library_path_lib.sh'
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/bin'
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/pkgconfig/motor_interface.pc'
+[1.555s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/python3.10/site-packages'
+[1.556s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/bin'
+[1.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.ps1'
+[1.557s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.dsv'
+[1.558s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.sh'
+[1.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.bash'
+[1.559s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.zsh'
+[1.560s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/colcon-core/packages/motor_interface)
+[1.561s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg' with build type 'ament_cmake'
+[1.561s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg'
+[1.561s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.561s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.565s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_test_pkg' with build type 'ament_cmake'
+[1.565s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_test_pkg'
+[1.565s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.566s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg -- -j9 -l9
+[1.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg -- -j9 -l9
+[1.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg' returned '0': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg -- -j9 -l9
+[1.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg
+[1.692s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_test_pkg)
+[1.693s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg' for CMake module files
+[1.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg' returned '0': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg
+[1.694s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg' for CMake config files
+[1.695s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_test_pkg', 'cmake_prefix_path')
+[1.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.ps1'
+[1.696s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.dsv'
+[1.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.sh'
+[1.697s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/bin'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/pkgconfig/motor_test_pkg.pc'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/python3.10/site-packages'
+[1.698s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/bin'
+[1.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.ps1'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.dsv'
+[1.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.sh'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.bash'
+[1.701s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.zsh'
+[1.702s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/colcon-core/packages/motor_test_pkg)
+[1.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_test_pkg)
+[1.703s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg' for CMake module files
+[1.704s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg' for CMake config files
+[1.704s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_test_pkg', 'cmake_prefix_path')
+[1.704s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.ps1'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.dsv'
+[1.705s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/hook/cmake_prefix_path.sh'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/bin'
+[1.706s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/pkgconfig/motor_test_pkg.pc'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/python3.10/site-packages'
+[1.707s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/bin'
+[1.707s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.ps1'
+[1.708s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.dsv'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.sh'
+[1.709s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.bash'
+[1.710s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.zsh'
+[1.711s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/colcon-core/packages/motor_test_pkg)
+[7.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg' returned '0': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg -- -j9 -l9
+[7.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg
+[7.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_communication_pkg)
+[7.066s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg' for CMake module files
+[7.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg' returned '0': AMENT_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg
+[7.067s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg' for CMake config files
+[7.067s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_communication_pkg', 'cmake_prefix_path')
+[7.068s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.ps1'
+[7.068s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.dsv'
+[7.069s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.sh'
+[7.070s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib'
+[7.070s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/bin'
+[7.070s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/pkgconfig/motor_communication_pkg.pc'
+[7.070s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/python3.10/site-packages'
+[7.071s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/bin'
+[7.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.ps1'
+[7.072s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.dsv'
+[7.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.sh'
+[7.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.bash'
+[7.073s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.zsh'
+[7.074s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/colcon-core/packages/motor_communication_pkg)
+[7.075s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_communication_pkg)
+[7.075s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg' for CMake module files
+[7.076s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg' for CMake config files
+[7.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_communication_pkg', 'cmake_prefix_path')
+[7.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.ps1'
+[7.077s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.dsv'
+[7.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/hook/cmake_prefix_path.sh'
+[7.078s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib'
+[7.078s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/bin'
+[7.078s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/pkgconfig/motor_communication_pkg.pc'
+[7.079s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/python3.10/site-packages'
+[7.079s] Level 1:colcon.colcon_core.environment:checking '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/bin'
+[7.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.ps1'
+[7.080s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.dsv'
+[7.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.sh'
+[7.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.bash'
+[7.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.zsh'
+[7.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/colcon-core/packages/motor_communication_pkg)
+[7.083s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.083s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.083s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.083s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.093s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.093s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.093s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.344s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.345s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/427/427/sb_new_tor/WK_ZY/install/local_setup.ps1'
+[7.347s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niic/427/427/sb_new_tor/WK_ZY/install/_local_setup_util_ps1.py'
+[7.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/427/427/sb_new_tor/WK_ZY/install/setup.ps1'
+[7.352s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/427/427/sb_new_tor/WK_ZY/install/local_setup.sh'
+[7.353s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/niic/427/427/sb_new_tor/WK_ZY/install/_local_setup_util_sh.py'
+[7.354s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/427/427/sb_new_tor/WK_ZY/install/setup.sh'
+[7.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/427/427/sb_new_tor/WK_ZY/install/local_setup.bash'
+[7.357s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/427/427/sb_new_tor/WK_ZY/install/setup.bash'
+[7.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/niic/427/427/sb_new_tor/WK_ZY/install/local_setup.zsh'
+[7.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/niic/427/427/sb_new_tor/WK_ZY/install/setup.zsh'

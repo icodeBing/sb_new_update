@@ -1,0 +1,10 @@
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/uninstall.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/motor_communication_pkg_uninstall.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/motor_node.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/test.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/edit_cache.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/rebuild_cache.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/list_install_components.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/install.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/install/local.dir
+/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg/CMakeFiles/install/strip.dir

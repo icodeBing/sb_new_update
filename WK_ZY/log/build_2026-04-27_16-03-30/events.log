@@ -1,0 +1,363 @@
+[0.000000] (-) TimerEvent: {}
+[0.000704] (motor_interface) JobQueued: {'identifier': 'motor_interface', 'dependencies': OrderedDict()}
+[0.000906] (motor_communication_pkg) JobQueued: {'identifier': 'motor_communication_pkg', 'dependencies': OrderedDict([('motor_interface', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface')])}
+[0.001086] (motor_test_pkg) JobQueued: {'identifier': 'motor_test_pkg', 'dependencies': OrderedDict([('motor_interface', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface')])}
+[0.001180] (motor_interface) JobStarted: {'identifier': 'motor_interface'}
+[0.011937] (motor_interface) JobProgress: {'identifier': 'motor_interface', 'progress': 'cmake'}
+[0.012921] (motor_interface) JobProgress: {'identifier': 'motor_interface', 'progress': 'build'}
+[0.013844] (motor_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface', '--', '-j9', '-l9'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble')]), 'shell': False}
+[0.085272] (motor_interface) StdoutLine: {'line': b'[  3%] Built target motor_interface__rs\n'}
+[0.085773] (motor_interface) StdoutLine: {'line': b'[  9%] Built target motor_interface__cpp\n'}
+[0.085977] (motor_interface) StdoutLine: {'line': b'[ 15%] Built target motor_interface__rosidl_generator_c\n'}
+[0.099474] (-) TimerEvent: {}
+[0.100152] (motor_interface) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_motor_interface\n'}
+[0.115333] (motor_interface) StdoutLine: {'line': b'[ 34%] Built target motor_interface__rosidl_typesupport_c\n'}
+[0.115760] (motor_interface) StdoutLine: {'line': b'[ 34%] Built target motor_interface__rosidl_typesupport_introspection_c\n'}
+[0.116020] (motor_interface) StdoutLine: {'line': b'[ 46%] Built target motor_interface__rosidl_typesupport_introspection_cpp\n'}
+[0.116216] (motor_interface) StdoutLine: {'line': b'[ 53%] Built target motor_interface__rosidl_typesupport_cpp\n'}
+[0.119443] (motor_interface) StdoutLine: {'line': b'[ 62%] Built target motor_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[0.131586] (motor_interface) StdoutLine: {'line': b'[ 71%] Built target motor_interface__rosidl_typesupport_fastrtps_c\n'}
+[0.158510] (motor_interface) StdoutLine: {'line': b'[ 71%] Built target motor_interface\n'}
+[0.186203] (motor_interface) StdoutLine: {'line': b'[ 75%] Built target motor_interface__py\n'}
+[0.199587] (-) TimerEvent: {}
+[0.217060] (motor_interface) StdoutLine: {'line': b'[ 81%] Built target motor_interface__rosidl_generator_py\n'}
+[0.249302] (motor_interface) StdoutLine: {'line': b'[ 93%] Built target motor_interface__rosidl_typesupport_c__pyext\n'}
+[0.249687] (motor_interface) StdoutLine: {'line': b'[ 96%] Built target motor_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[0.249840] (motor_interface) StdoutLine: {'line': b'[100%] Built target motor_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.299717] (-) TimerEvent: {}
+[0.400191] (-) TimerEvent: {}
+[0.455745] (motor_interface) StdoutLine: {'line': b'running egg_info\n'}
+[0.456988] (motor_interface) StdoutLine: {'line': b'writing motor_interface.egg-info/PKG-INFO\n'}
+[0.457391] (motor_interface) StdoutLine: {'line': b'writing dependency_links to motor_interface.egg-info/dependency_links.txt\n'}
+[0.457697] (motor_interface) StdoutLine: {'line': b'writing top-level names to motor_interface.egg-info/top_level.txt\n'}
+[0.460745] (motor_interface) StdoutLine: {'line': b"reading manifest file 'motor_interface.egg-info/SOURCES.txt'\n"}
+[0.461571] (motor_interface) StdoutLine: {'line': b"writing manifest file 'motor_interface.egg-info/SOURCES.txt'\n"}
+[0.500318] (-) TimerEvent: {}
+[0.509412] (motor_interface) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_motor_interface_egg\n'}
+[0.525651] (motor_interface) CommandEnded: {'returncode': 0}
+[0.526769] (motor_interface) JobProgress: {'identifier': 'motor_interface', 'progress': 'install'}
+[0.539554] (motor_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_interface'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble')]), 'shell': False}
+[0.551359] (motor_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.551761] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/rosidl_interfaces/motor_interface\n'}
+[0.551948] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.552091] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.552213] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.552347] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.552476] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.h\n'}
+[0.552663] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__struct.h\n'}
+[0.552791] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__functions.c\n'}
+[0.552914] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__functions.h\n'}
+[0.553012] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/joint_motor.h\n'}
+[0.553142] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/library_path.sh\n'}
+[0.553313] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/library_path.dsv\n'}
+[0.553522] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_generator_c.so\n'}
+[0.553700] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.553862] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.553958] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.554080] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_fastrtps_c.h\n'}
+[0.554196] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.554291] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[0.554426] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.554565] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.554725] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/joint_motor.hpp\n'}
+[0.554822] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.554947] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__struct.hpp\n'}
+[0.555042] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__traits.hpp\n'}
+[0.555146] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.hpp\n'}
+[0.555279] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__builder.hpp\n'}
+[0.555373] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.555535] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.555690] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.555786] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.555912] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.556006] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.556097] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/dds_fastrtps\n'}
+[0.556236] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.556331] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.556460] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.556633] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.556733] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_introspection_c.h\n'}
+[0.556834] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.c\n'}
+[0.556988] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.557085] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_c.so\n'}
+[0.557225] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_c.so\n'}
+[0.557321] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface\n'}
+[0.557444] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg\n'}
+[0.557537] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail\n'}
+[0.557660] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.557845] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/include/motor_interface/motor_interface/msg/detail/joint_motor__type_support.cpp\n'}
+[0.558028] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[0.558194] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_typesupport_cpp.so\n'}
+[0.558313] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/pythonpath.sh\n'}
+[0.558405] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/pythonpath.dsv\n'}
+[0.558497] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info\n'}
+[0.558587] (motor_interface) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.558676] (motor_interface) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.558764] (motor_interface) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.558849] (motor_interface) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.558936] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface\n'}
+[0.559021] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.559121] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.559233] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.559324] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/__init__.py\n'}
+[0.559411] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg\n'}
+[0.559497] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/_joint_motor.py\n'}
+[0.559583] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/_joint_motor_s.c\n'}
+[0.559669] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg/__init__.py\n'}
+[0.559767] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/libmotor_interface__rosidl_generator_py.so\n'}
+[0.559856] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.559945] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_c.c\n'}
+[0.560033] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/_motor_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.600437] (-) TimerEvent: {}
+[0.600828] (motor_interface) StdoutLine: {'line': b"Listing '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface'...\n"}
+[0.601042] (motor_interface) StdoutLine: {'line': b"Listing '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/msg'...\n"}
+[0.608439] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.608773] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.609167] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages/motor_interface/motor_interface_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[0.609525] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib/libmotor_interface__rosidl_generator_py.so\n'}
+[0.609904] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/rust_packages/motor_interface\n'}
+[0.610044] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust\n'}
+[0.610247] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src\n'}
+[0.610402] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg.rs\n'}
+[0.610553] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg\n'}
+[0.610704] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/msg/rmw.rs\n'}
+[0.610853] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/src/lib.rs\n'}
+[0.611022] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/build.rs\n'}
+[0.611207] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/rust/Cargo.toml\n'}
+[0.611368] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/msg/JointMotor.idl\n'}
+[0.611467] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/msg/JointMotor.msg\n'}
+[0.611562] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/package_run_dependencies/motor_interface\n'}
+[0.611684] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/parent_prefix_path/motor_interface\n'}
+[0.611779] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/ament_prefix_path.sh\n'}
+[0.611930] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/ament_prefix_path.dsv\n'}
+[0.612024] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/path.sh\n'}
+[0.612192] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/environment/path.dsv\n'}
+[0.612316] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.bash\n'}
+[0.612428] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.sh\n'}
+[0.612555] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.zsh\n'}
+[0.612683] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/local_setup.dsv\n'}
+[0.612805] (motor_interface) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.dsv\n'}
+[0.612951] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/ament_index/resource_index/packages/motor_interface\n'}
+[0.613046] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cExport.cmake\n'}
+[0.613216] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.613346] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.613468] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.613615] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_cppExport.cmake\n'}
+[0.613760] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.613898] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.614069] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.614249] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.614378] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cExport.cmake\n'}
+[0.614473] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.614566] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.614655] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.614744] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cppExport.cmake\n'}
+[0.614832] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.614922] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_pyExport.cmake\n'}
+[0.615011] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/export_motor_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.615098] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[0.615204] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.615295] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.615395] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.615499] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.615587] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.615675] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.615762] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interfaceConfig.cmake\n'}
+[0.615848] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/cmake/motor_interfaceConfig-version.cmake\n'}
+[0.615934] (motor_interface) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/share/motor_interface/package.xml\n'}
+[0.617543] (motor_interface) CommandEnded: {'returncode': 0}
+[0.648432] (motor_interface) JobEnded: {'identifier': 'motor_interface', 'rc': 0}
+[0.650121] (motor_communication_pkg) JobStarted: {'identifier': 'motor_communication_pkg'}
+[0.654339] (motor_test_pkg) JobStarted: {'identifier': 'motor_test_pkg'}
+[0.661027] (motor_communication_pkg) JobProgress: {'identifier': 'motor_communication_pkg', 'progress': 'cmake'}
+[0.662031] (motor_communication_pkg) JobProgress: {'identifier': 'motor_communication_pkg', 'progress': 'build'}
+[0.662759] (motor_communication_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg', '--', '-j9', '-l9'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble')]), 'shell': False}
+[0.665729] (motor_test_pkg) JobProgress: {'identifier': 'motor_test_pkg', 'progress': 'cmake'}
+[0.666688] (motor_test_pkg) JobProgress: {'identifier': 'motor_test_pkg', 'progress': 'build'}
+[0.667077] (motor_test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg', '--', '-j9', '-l9'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble')]), 'shell': False}
+[0.700581] (-) TimerEvent: {}
+[0.721331] (motor_communication_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motor_node\x1b[0m\n'}
+[0.738829] (motor_test_pkg) StdoutLine: {'line': b'[100%] Built target motor_test_node\n'}
+[0.753976] (motor_test_pkg) CommandEnded: {'returncode': 0}
+[0.754807] (motor_communication_pkg) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/motor_node.dir/src/motor_comm/motorComm.cpp.o\x1b[0m\n'}
+[0.755399] (motor_test_pkg) JobProgress: {'identifier': 'motor_test_pkg', 'progress': 'install'}
+[0.756048] (motor_test_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble')]), 'shell': False}
+[0.767072] (motor_test_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.767491] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/motor_test_pkg/motor_test_node\n'}
+[0.767685] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/package_run_dependencies/motor_test_pkg\n'}
+[0.767880] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/parent_prefix_path/motor_test_pkg\n'}
+[0.768061] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/ament_prefix_path.sh\n'}
+[0.768230] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/ament_prefix_path.dsv\n'}
+[0.768360] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/path.sh\n'}
+[0.768461] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/path.dsv\n'}
+[0.768557] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.bash\n'}
+[0.768705] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.sh\n'}
+[0.768917] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.zsh\n'}
+[0.769036] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.dsv\n'}
+[0.769162] (motor_test_pkg) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.dsv\n'}
+[0.769270] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/packages/motor_test_pkg\n'}
+[0.769369] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/cmake/motor_test_pkgConfig.cmake\n'}
+[0.769465] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/cmake/motor_test_pkgConfig-version.cmake\n'}
+[0.769558] (motor_test_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.xml\n'}
+[0.771389] (motor_test_pkg) CommandEnded: {'returncode': 0}
+[0.789807] (motor_test_pkg) JobEnded: {'identifier': 'motor_test_pkg', 'rc': 0}
+[0.800647] (-) TimerEvent: {}
+[0.900981] (-) TimerEvent: {}
+[1.001463] (-) TimerEvent: {}
+[1.101923] (-) TimerEvent: {}
+[1.202423] (-) TimerEvent: {}
+[1.302929] (-) TimerEvent: {}
+[1.403460] (-) TimerEvent: {}
+[1.503996] (-) TimerEvent: {}
+[1.604507] (-) TimerEvent: {}
+[1.705016] (-) TimerEvent: {}
+[1.805518] (-) TimerEvent: {}
+[1.906043] (-) TimerEvent: {}
+[2.006591] (-) TimerEvent: {}
+[2.107142] (-) TimerEvent: {}
+[2.207615] (-) TimerEvent: {}
+[2.308154] (-) TimerEvent: {}
+[2.408654] (-) TimerEvent: {}
+[2.509179] (-) TimerEvent: {}
+[2.609689] (-) TimerEvent: {}
+[2.710219] (-) TimerEvent: {}
+[2.810762] (-) TimerEvent: {}
+[2.911286] (-) TimerEvent: {}
+[3.011794] (-) TimerEvent: {}
+[3.112322] (-) TimerEvent: {}
+[3.212849] (-) TimerEvent: {}
+[3.313355] (-) TimerEvent: {}
+[3.413882] (-) TimerEvent: {}
+[3.514410] (-) TimerEvent: {}
+[3.614928] (-) TimerEvent: {}
+[3.715456] (-) TimerEvent: {}
+[3.815979] (-) TimerEvent: {}
+[3.916514] (-) TimerEvent: {}
+[4.017038] (-) TimerEvent: {}
+[4.117560] (-) TimerEvent: {}
+[4.218092] (-) TimerEvent: {}
+[4.318614] (-) TimerEvent: {}
+[4.419133] (-) TimerEvent: {}
+[4.519665] (-) TimerEvent: {}
+[4.620195] (-) TimerEvent: {}
+[4.720732] (-) TimerEvent: {}
+[4.821242] (-) TimerEvent: {}
+[4.921769] (-) TimerEvent: {}
+[5.022317] (-) TimerEvent: {}
+[5.122874] (-) TimerEvent: {}
+[5.223407] (-) TimerEvent: {}
+[5.323907] (-) TimerEvent: {}
+[5.424420] (-) TimerEvent: {}
+[5.524907] (-) TimerEvent: {}
+[5.625461] (-) TimerEvent: {}
+[5.725973] (-) TimerEvent: {}
+[5.826499] (-) TimerEvent: {}
+[5.927012] (-) TimerEvent: {}
+[6.027553] (-) TimerEvent: {}
+[6.128053] (-) TimerEvent: {}
+[6.228564] (-) TimerEvent: {}
+[6.329064] (-) TimerEvent: {}
+[6.429564] (-) TimerEvent: {}
+[6.530061] (-) TimerEvent: {}
+[6.630583] (-) TimerEvent: {}
+[6.731089] (-) TimerEvent: {}
+[6.831591] (-) TimerEvent: {}
+[6.932139] (-) TimerEvent: {}
+[7.032663] (-) TimerEvent: {}
+[7.133179] (-) TimerEvent: {}
+[7.233670] (-) TimerEvent: {}
+[7.334186] (-) TimerEvent: {}
+[7.434679] (-) TimerEvent: {}
+[7.535199] (-) TimerEvent: {}
+[7.635722] (-) TimerEvent: {}
+[7.736232] (-) TimerEvent: {}
+[7.836736] (-) TimerEvent: {}
+[7.937251] (-) TimerEvent: {}
+[8.037719] (-) TimerEvent: {}
+[8.138220] (-) TimerEvent: {}
+[8.238706] (-) TimerEvent: {}
+[8.339229] (-) TimerEvent: {}
+[8.439732] (-) TimerEvent: {}
+[8.540238] (-) TimerEvent: {}
+[8.640724] (-) TimerEvent: {}
+[8.741222] (-) TimerEvent: {}
+[8.841726] (-) TimerEvent: {}
+[8.942241] (-) TimerEvent: {}
+[9.042747] (-) TimerEvent: {}
+[9.143224] (-) TimerEvent: {}
+[9.243725] (-) TimerEvent: {}
+[9.344221] (-) TimerEvent: {}
+[9.444712] (-) TimerEvent: {}
+[9.545193] (-) TimerEvent: {}
+[9.645628] (-) TimerEvent: {}
+[9.746105] (-) TimerEvent: {}
+[9.846609] (-) TimerEvent: {}
+[9.947098] (-) TimerEvent: {}
+[10.047596] (-) TimerEvent: {}
+[10.148084] (-) TimerEvent: {}
+[10.248603] (-) TimerEvent: {}
+[10.349088] (-) TimerEvent: {}
+[10.449569] (-) TimerEvent: {}
+[10.550047] (-) TimerEvent: {}
+[10.650556] (-) TimerEvent: {}
+[10.751044] (-) TimerEvent: {}
+[10.851543] (-) TimerEvent: {}
+[10.952028] (-) TimerEvent: {}
+[11.052539] (-) TimerEvent: {}
+[11.153047] (-) TimerEvent: {}
+[11.253522] (-) TimerEvent: {}
+[11.354016] (-) TimerEvent: {}
+[11.454494] (-) TimerEvent: {}
+[11.554954] (-) TimerEvent: {}
+[11.655454] (-) TimerEvent: {}
+[11.755900] (-) TimerEvent: {}
+[11.856406] (-) TimerEvent: {}
+[11.956910] (-) TimerEvent: {}
+[12.057435] (-) TimerEvent: {}
+[12.157938] (-) TimerEvent: {}
+[12.258459] (-) TimerEvent: {}
+[12.358935] (-) TimerEvent: {}
+[12.459437] (-) TimerEvent: {}
+[12.559904] (-) TimerEvent: {}
+[12.660392] (-) TimerEvent: {}
+[12.760898] (-) TimerEvent: {}
+[12.861399] (-) TimerEvent: {}
+[12.961882] (-) TimerEvent: {}
+[13.062373] (-) TimerEvent: {}
+[13.162856] (-) TimerEvent: {}
+[13.263343] (-) TimerEvent: {}
+[13.363845] (-) TimerEvent: {}
+[13.464360] (-) TimerEvent: {}
+[13.564861] (-) TimerEvent: {}
+[13.582203] (motor_communication_pkg) StdoutLine: {'line': b'[ 33%] \x1b[32m\x1b[1mLinking CXX executable motor_node\x1b[0m\n'}
+[13.665001] (-) TimerEvent: {}
+[13.765581] (-) TimerEvent: {}
+[13.866137] (-) TimerEvent: {}
+[13.966633] (-) TimerEvent: {}
+[14.067153] (-) TimerEvent: {}
+[14.167667] (-) TimerEvent: {}
+[14.206342] (motor_communication_pkg) StdoutLine: {'line': b'[100%] Built target motor_node\n'}
+[14.222150] (motor_communication_pkg) CommandEnded: {'returncode': 0}
+[14.223212] (motor_communication_pkg) JobProgress: {'identifier': 'motor_communication_pkg', 'progress': 'install'}
+[14.223536] (motor_communication_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg'], 'cwd': '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg', 'env': OrderedDict([('SUDO_GID', '1000'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-0/default,12095,1'), ('MAIL', '/var/mail/root'), ('USER', 'root'), ('LC_TIME', 'zh_CN.UTF-8'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/lib:/home/niic/test_env/lib/python3.10/site-packages/torch/lib:/usr/local/cuda/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/home/niic'), ('TERM_PROGRAM_VERSION', '3.2a'), ('JETSON_L4T', '36.4.0'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson AGX Orin Developer Kit'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('COLCON_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install'), ('SUDO_UID', '1000'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('JETSON_MODULE', ''), ('JETSON_SERIAL_NUMBER', '1422125066583'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'screen'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('SUDO_COMMAND', '/usr/bin/tmux'), ('AMENT_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('SUDO_USER', 'niic'), ('Torch_DIR', '/home/niic/test_env/lib/python3.10/site-packages/torch/share/cmake/Torch'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_communication_pkg'), ('CUDA_HOME', '/usr/local/cuda'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', '6.1'), ('CMAKE_PREFIX_PATH', '/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble')]), 'shell': False}
+[14.234311] (motor_communication_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.234573] (motor_communication_pkg) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node\n'}
+[14.243476] (motor_communication_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node" to ""\n'}
+[14.243678] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/package_run_dependencies/motor_communication_pkg\n'}
+[14.243869] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/parent_prefix_path/motor_communication_pkg\n'}
+[14.244048] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.sh\n'}
+[14.244256] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.dsv\n'}
+[14.244363] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.sh\n'}
+[14.244464] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.dsv\n'}
+[14.244559] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.bash\n'}
+[14.244742] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.sh\n'}
+[14.244871] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.zsh\n'}
+[14.244965] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.dsv\n'}
+[14.245055] (motor_communication_pkg) StdoutLine: {'line': b'-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.dsv\n'}
+[14.245161] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/packages/motor_communication_pkg\n'}
+[14.245256] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig.cmake\n'}
+[14.245346] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig-version.cmake\n'}
+[14.245434] (motor_communication_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.xml\n'}
+[14.247485] (motor_communication_pkg) CommandEnded: {'returncode': 0}
+[14.265359] (motor_communication_pkg) JobEnded: {'identifier': 'motor_communication_pkg', 'rc': 0}
+[14.266351] (-) EventReactorShutdown: {}

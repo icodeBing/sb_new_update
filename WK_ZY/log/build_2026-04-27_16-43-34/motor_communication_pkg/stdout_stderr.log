@@ -1,0 +1,67 @@
+[35m[1mConsolidate compiler generated dependencies of target motor_node[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/motor_node.dir/src/motor_comm/IPCComm.cpp.o[0m
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:426:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma region [m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  426 | #pragma region
+      | 
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:587:[m[K [01;35m[Kwarning: [m[Kignoring ‘[01m[K#pragma endregion [m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunknown-pragmas-Wunknown-pragmas]8;;[m[K]
+  587 | #pragma endregion
+      | 
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:[m[K In static member function ‘[01m[Kstatic void* IPCComm::thread_fun(void*)[m[K’:
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:44:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+   44 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:[m[K In member function ‘[01m[Kvoid IPCComm::print_send_cmd(const char*, Motor_master*)[m[K’:
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:279:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 4 has type ‘[01m[Kint32_t[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  279 |             printf("电机%d:%d kp:[01;35m[K%.4f[m[K kd:%.4f", i, msg->master_id[m].motor_id[i].velocity_cmd,
+      |                                  [01;35m[K~~~^[m[K
+      |                                     [01;35m[K|[m[K
+      |                                     [01;35m[Kdouble[m[K
+      |                                  [32m[K%.4d[m[K
+  280 |                    [32m[Kmsg->master_id[m].motor_id[i].kp_cmd[m[K, msg->master_id[m].motor_id[i].kd_cmd);
+      |                    [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                  [32m[K|[m[K
+      |                                                  [32m[Kint32_t {aka int}[m[K
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:279:45:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint32_t[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  279 |             printf("电机%d:%d kp:%.4f kd:[01;35m[K%.4f[m[K", i, msg->master_id[m].motor_id[i].velocity_cmd,
+      |                                          [01;35m[K~~~^[m[K
+      |                                             [01;35m[K|[m[K
+      |                                             [01;35m[Kdouble[m[K
+      |                                          [32m[K%.4d[m[K
+  280 |                    msg->master_id[m].motor_id[i].kp_cmd, [32m[Kmsg->master_id[m].motor_id[i].kd_cmd[m[K);
+      |                                                          [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                        [32m[K|[m[K
+      |                                                                                        [32m[Kint32_t {aka int}[m[K
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:[m[K In member function ‘[01m[Kvoid IPCComm::print_recv_actual(const char*, Motor_master*)[m[K’:
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:292:22:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+  292 |         printf("电机[01;35m[K%d[m[K: kp= %.2f, kd= %.2f, 位置=%.2f, 速度=%.2f, 力矩=%.2f.....\n",
+      |                     [01;35m[K~^[m[K
+      |                      [01;35m[K|[m[K
+      |                      [01;35m[Kint[m[K
+      |                     [32m[K%ld[m[K
+  293 |                [32m[Ki[m[K,
+      |                [32m[K~[m[K      
+      |                [32m[K|[m[K
+      |                [32m[Ksize_t {aka long unsigned int}[m[K
+[01m[K/home/niic/427/427/sb_new_tor/WK_ZY/src/motor_communication_pkg/src/motor_comm/IPCComm.cpp:287:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  287 | void IPCComm::print_recv_actual(const char *prefix, [01;35m[Kstruct Motor_master *msg[m[K)
+      |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[ 33%] [32m[1mLinking CXX executable motor_node[0m
+[100%] Built target motor_node
+-- Install configuration: ""
+-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node
+-- Set runtime path of "/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/lib/motor_communication_pkg/motor_node" to ""
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/package_run_dependencies/motor_communication_pkg
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/parent_prefix_path/motor_communication_pkg
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.sh
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/environment/path.dsv
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.bash
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.sh
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.zsh
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/local_setup.dsv
+-- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.dsv
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/ament_index/resource_index/packages/motor_communication_pkg
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig.cmake
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/cmake/motor_communication_pkgConfig-version.cmake
+-- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg/share/motor_communication_pkg/package.xml

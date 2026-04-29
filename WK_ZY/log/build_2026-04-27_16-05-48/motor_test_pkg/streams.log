@@ -1,0 +1,22 @@
+[0.014s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg -- -j9 -l9
+[0.084s] [100%] Built target motor_test_node
+[0.100s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg' returned '0': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --build /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg -- -j9 -l9
+[0.102s] Invoking command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg
+[0.113s] -- Install configuration: ""
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/lib/motor_test_pkg/motor_test_node
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/package_run_dependencies/motor_test_pkg
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/parent_prefix_path/motor_test_pkg
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/ament_prefix_path.sh
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/ament_prefix_path.dsv
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/path.sh
+[0.114s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/environment/path.dsv
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.bash
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.sh
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.zsh
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/local_setup.dsv
+[0.115s] -- Installing: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.dsv
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/ament_index/resource_index/packages/motor_test_pkg
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/cmake/motor_test_pkgConfig.cmake
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/cmake/motor_test_pkgConfig-version.cmake
+[0.115s] -- Up-to-date: /home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg/share/motor_test_pkg/package.xml
+[0.118s] Invoked command in '/home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg' returned '0': CMAKE_PREFIX_PATH=/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_interface:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_test_pkg:/home/niic/427/427/sb_new_tor/WK_ZY/install/motor_communication_pkg:/opt/ros/humble /usr/bin/cmake --install /home/niic/427/427/sb_new_tor/WK_ZY/build/motor_test_pkg
